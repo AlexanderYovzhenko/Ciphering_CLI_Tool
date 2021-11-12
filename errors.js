@@ -10,7 +10,7 @@ class UserError extends Error {
 class PipelineStreamsError extends Error {
   constructor(message, code) {
     super(message);
-    this.name = "pipeline streams error!";
+    this.name = "Pipeline streams error!";
     this.code = code;
     this.isUserError = true;
   }

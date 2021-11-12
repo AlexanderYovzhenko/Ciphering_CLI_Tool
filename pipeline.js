@@ -7,7 +7,7 @@ const pipeStreams = (argStreams) => {
   pipeline(
     ...argStreams,
     err => {
-      if(err)  errorHandler(new errors.PipelineStreamsError('pipeline streams error!', 5));
+      if(err)  errorHandler(new errors.PipelineStreamsError('Pipeline streams error!', 5));
     } 
   );
 };
