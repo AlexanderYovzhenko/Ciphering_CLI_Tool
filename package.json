@@ -4,7 +4,8 @@
   "description": "js test.js jest ",
   "main": "my_ciphering_cli.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/GoldenManBel/Ciphering-CLI-Tool/issues"
   },
-  "homepage": "https://github.com/GoldenManBel/Ciphering-CLI-Tool#readme"
+  "homepage": "https://github.com/GoldenManBel/Ciphering-CLI-Tool#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
