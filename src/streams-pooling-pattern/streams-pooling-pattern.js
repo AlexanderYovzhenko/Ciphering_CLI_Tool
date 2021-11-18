@@ -1,16 +1,7 @@
-const streamsTransform = require('./streams-transform');
-const customStreams = require('./custom-streams');
-const arrArguments = process.argv.slice(2);
-const { stdin, stdout } = require('process');
+const streamsTransform = require('../streams/streams-transform');
+const searchInput = require('../search-arguments/search-input');
+const searchOutput = require('../search-arguments/search-output');
 
-
-const searchInput = () => {
-  return arrArguments.indexOf('-i') + 1 || arrArguments.indexOf('--input') + 1 ? customStreams.readStream : stdin;
-};
-
-const searchOutput = () => {
-  return arrArguments.indexOf('-o') + 1 || arrArguments.indexOf('--output') + 1 ? customStreams.writeStream : stdout;
-};
 
 const {
   creatCaesarStream: C1 ,

@@ -1,14 +1,10 @@
 const arrArguments = process.argv.slice(2);
-const validationArguments = require('./validation-arguments');
-const streamsPoolingPattern = require('./streams-pooling-pattern');
-const pipeline = require('./pipeline');
-const errorHandler = require('./error-handler');
+const validationArguments = require('./src/validation/index');
+const streamsPoolingPattern = require('./src/streams-pooling-pattern/streams-pooling-pattern');
+const pipeline = require('./src/pipeline/pipeline');
+const errorHandler = require('./src/errors/error-handler');
+const searchConfig = require('./src/search-arguments/search-config');
 
-
-const searchConfig = () => {
-  const configFlag = arrArguments[arrArguments.indexOf('-c')] || arrArguments[arrArguments.indexOf('--config')];
-  return arrArguments[arrArguments.indexOf('-c')] || arrArguments[arrArguments.indexOf('--config')] ? arrArguments[arrArguments.indexOf(configFlag) + 1] : false;
-};
 
 const startValidation = () => {
   try {

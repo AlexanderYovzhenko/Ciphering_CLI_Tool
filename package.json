@@ -1,0 +1,19 @@
+{
+  "name": "ciphering-cli-tool",
+  "version": "1.0.0",
+  "description": "js test.js jest ",
+  "main": "my_ciphering_cli.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldenManBel/Ciphering-CLI-Tool.git"
+  },
+  "author": "Alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoldenManBel/Ciphering-CLI-Tool/issues"
+  },
+  "homepage": "https://github.com/GoldenManBel/Ciphering-CLI-Tool#readme"
+}

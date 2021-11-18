@@ -1,6 +1,6 @@
 const { pipeline }  = require('stream');
-const errors = require('./errors');
-const errorHandler = require('./error-handler');
+const errors = require('../errors/errors');
+const errorHandler = require('../errors/error-handler');
 
 
 const pipeStreams = (argStreams) => {  
