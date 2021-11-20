@@ -1,4 +1,22 @@
-class UserError extends Error {
+class ConfigNotCorrect extends Error {
+  constructor(message, code) {
+    super(message);
+    this.name = 'UserError';
+    this.code = code;
+    this.isUserError = true;
+  }
+};
+
+class ConfigMissing extends Error {
+  constructor(message, code) {
+    super(message);
+    this.name = 'UserError';
+    this.code = code;
+    this.isUserError = true;
+  }
+};
+
+class DuplicateArguments extends Error {
   constructor(message, code) {
     super(message);
     this.name = 'UserError';
@@ -18,6 +36,8 @@ class PipelineStreamsError extends Error {
 
 
 module.exports = {
-  UserError,
+  ConfigNotCorrect,
+  ConfigMissing,
+  DuplicateArguments,
   PipelineStreamsError
 };

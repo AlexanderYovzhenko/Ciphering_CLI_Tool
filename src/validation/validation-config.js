@@ -9,9 +9,9 @@ const validationConfig = (config) => {
     ciphers.forEach(el => {
       if(arrCiphers.includes(el)) count++;
     });
-    if(ciphers.length !== count ) throw new errors.UserError('Config is not correct!', 3);
+    if(ciphers.length !== count ) throw new errors.ConfigNotCorrect('Config is not correct!', 3);
   } else {
-    throw new errors.UserError ('Missing Config!', 2);
+    throw new errors.ConfigMissing ('Missing Config!', 2);
   }
 };
 

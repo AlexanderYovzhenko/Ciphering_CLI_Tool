@@ -7,7 +7,7 @@ const validationRepeatedArguments = (arrArguments) => {
   newArrArguments.forEach(arg => {
     count = newArrArguments.reduce((acc,  el) => arg === el && (arg === '-i' || arg === '-o' || arg === '-c') ? ++acc : acc , 0);
     if(count > 1) {
-      throw new errors.UserError("Don't duplicate arguments!", 1);
+      throw new errors.DuplicateArguments("Don't duplicate arguments!", 1);
     }; 
   });
 }; 
