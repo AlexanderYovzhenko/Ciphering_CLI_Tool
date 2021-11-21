@@ -3,7 +3,7 @@ const errorHandler = require('../../src/errors/error-handler');
 
 
 describe('Check error handler', () => {
-  test('should ', () => {
+  test('should to be error', () => {
     expect(() => errorHandler(Error)).toThrow(); 
   });
 });
