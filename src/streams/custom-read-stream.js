@@ -45,5 +45,5 @@ const readStream = new ReadStream(input);
 
 
 module.exports = {
-  readStream,
+  readStream
 };
