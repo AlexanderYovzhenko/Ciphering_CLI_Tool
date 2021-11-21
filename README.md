@@ -2,9 +2,9 @@
 
 Testing: 
 
-Clone task-2: git clone https://github.com/GoldenManBel/Ciphering-CLI-Tool.git  
-Branch to task-2: git checkout task-2  
-Start program testing: npm run coverage  
+Clone task-2: `git clone https://github.com/GoldenManBel/Ciphering-CLI-Tool.git`  
+Branch to task-2: `git checkout task-2`  
+Start program testing: `npm run coverage`  
 Success scenarios and Error scenarios have in file 'scenarios.test.js'    
 
 
@@ -14,7 +14,7 @@ Success scenarios and Error scenarios have in file 'scenarios.test.js'
 Program for encoding, decrypting text:  
 
 Download the program to your computer and run it  
-The program can be run from the command line with the following command:  node my_ciphering_cli -c "C1-C1-R0-A" -i "./input.txt" -o "./output.txt"   
+The program can be run from the command line with the following command:  `node my_ciphering_cli -c "C1-C1-R0-A" -i "./input.txt" -o "./output.txt"`  
 
 Parameters that can be passed:  
 
