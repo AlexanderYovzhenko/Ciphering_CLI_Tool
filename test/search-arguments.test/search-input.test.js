@@ -1,7 +1,7 @@
 const searchInput = require('../../src/search-arguments/search-input');
 const customStreams = require('../../src/streams/custom-read-stream');
 
-function forEach(items, callback) {
+const forEach = (items, callback) => {
   for (let index = 0; index < items.length; index++) {
     callback(items[index]);
   }

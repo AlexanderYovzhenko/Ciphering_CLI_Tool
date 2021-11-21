@@ -1,7 +1,7 @@
 const searchOutput = require('../../src/search-arguments/search-output');
 const customStreams = require('../../src/streams/custom-write-stream');
 
-function forEach(items, callback) {
+const forEach = (items, callback) => {
   for (let index = 0; index < items.length; index++) {
     callback(items[index]);
   }
@@ -18,6 +18,10 @@ describe('Search output', () => {
 
   test('should value is custom write stream', () => {
     expect(mockSearchOutput.mock.results[0].value).toEqual(customStreams.writeStream);
+  });  
+
+  test('should value is custom write stream', () => {
+    expect(mockSearchOutput.mock.results[2].value).toEqual(customStreams.writeStream);
   });  
 
   test('should value is process stdout', () => {
