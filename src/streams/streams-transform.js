@@ -1,5 +1,5 @@
 const { Transform } = require('stream');
-const ciphers = require('./ciphers');
+const ciphers = require('../ciphers/index');
 
 const {
   encryptСaesar,
