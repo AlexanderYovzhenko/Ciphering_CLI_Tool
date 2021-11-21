@@ -5,7 +5,8 @@
   "main": "my_ciphering_cli.js",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "d": "jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,17 @@
   "homepage": "https://github.com/GoldenManBel/Ciphering-CLI-Tool#readme",
   "devDependencies": {
     "jest": "^27.3.1"
+  },
+  "jest": {
+  "verbose": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "!**/node_modules/**",
+    "!**/coverage/**",
+    "!**/pipeline/**",
+    "!**/custom-read-stream.js/**",
+    "!**/custom-write-stream.js/**"
+  ]
   }
 }
