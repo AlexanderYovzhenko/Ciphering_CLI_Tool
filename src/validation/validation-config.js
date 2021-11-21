@@ -10,6 +10,7 @@ const validationConfig = (config) => {
       if(arrCiphers.includes(el)) count++;
     });
     if(ciphers.length !== count ) throw new errors.ConfigNotCorrect('Config is not correct!', 3);
+    return (ciphers.length === count );
   } else {
     throw new errors.ConfigMissing ('Missing Config!', 2);
   }
